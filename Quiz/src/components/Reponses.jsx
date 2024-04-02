@@ -1,9 +1,7 @@
-function Reponse({handleClick, children}) {
+function Reponse({handleClick, children, isSelected}) {
     return (
-        <div>
-        <button className="rep" onClick={handleClick}> 
+        <button className={isSelected ? "selected rep " : "rep"} onClick={handleClick}> 
         {children}</button>
-        </div>
     )}
 
 export default Reponse;
